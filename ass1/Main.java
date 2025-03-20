@@ -3,7 +3,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         ScheduledDate scheduledDate = new ScheduledDate(LocalDate.of(2025, 6, 15));
-        System.out.println("ScheduledDate:" + scheduledDate.getDate());
+        System.out.println("ScheduledDate:" + scheduledDate.getScheduledDate());
 
         Athlete athlete1 = new Athlete("Janez", "Novak");
         athlete1.setAthleteNumber(10);
@@ -17,14 +17,15 @@ public class Main {
         athlete2.setAthleteNumber(66);
 
         Match match = new Match("Handball", scheduledDate);
-        System.out.println("Match:" + match.getTitle() + "," + match.getTermin().getDate());
+        System.out.println("Match:" + match.getTitle() + "," + match.getScheduledDate().getScheduledDate());
 
         System.out.println("Can compete:" + match.canCompete(athlete1));
         System.out.println("Can compete:" + match.canCompete(athlete2));
 
         Training training = new Training("Winter training");
-        training.setTermin(scheduledDate);
+        training.setScheduledDate(scheduledDate);
         training.setTrainerName("Marko Kovac");
-        System.out.println("Training:" + training.getTitle() + "," + training.getTrainerName() + "," + training.getTermin().getDate());
+        System.out.println("Training:" + training.getTitle() + "," + training.getTrainerName() + "," + training.getScheduledDate().getScheduledDate());
     }
 }
+

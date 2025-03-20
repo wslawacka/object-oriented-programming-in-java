@@ -1,14 +1,18 @@
 import java.time.LocalDate;
 
 public class ScheduledDate {
-    private LocalDate date;
-    public ScheduledDate(LocalDate date){
-        this.date = date;
+
+    private LocalDate scheduledDate;
+
+    public ScheduledDate(LocalDate scheduledDate) {
+        this.scheduledDate = scheduledDate;
     }
-    public void setDate(LocalDate date){
-        this.date = date;
+
+    public void setScheduledDate(LocalDate scheduledDate) {
+        this.scheduledDate = scheduledDate;
     }
-    public LocalDate getDate(){
-        return this.date;
+
+    public LocalDate getScheduledDate() {
+        return scheduledDate;
     }
 }
