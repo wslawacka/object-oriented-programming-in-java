@@ -29,7 +29,7 @@ public abstract class Venue {
 
     @Override
     public String toString(){
-        return "Venue:" + name + "," + phoneNumber;
+        return "Venue:" + name + "," + phoneNumber + "," + sportsDiscipline;
     }
     public void addMatch(Match match){
         for(int i = 0; i < matchList.length; i++){

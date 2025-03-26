@@ -20,7 +20,7 @@ public class Training extends Event {
 
     @Override
     public String toString(){
-        return "Training:" + super.toString() + "," + trainerName;
+        return super.toString() + "," + trainerName;
     }
 
 }

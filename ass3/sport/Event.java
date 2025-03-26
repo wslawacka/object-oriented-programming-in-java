@@ -37,7 +37,7 @@ public class Event {
 
     @Override
     public String toString(){
-        return title + "," + scheduledDate + "," + cancelled;
+        return "Event:" + title + "," + scheduledDate + "," + cancelled;
     }
 
 }

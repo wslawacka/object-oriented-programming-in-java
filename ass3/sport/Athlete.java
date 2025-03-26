@@ -55,7 +55,7 @@ public class Athlete {
 
     @Override
     public String toString(){
-        return "Athlete:" + name + "," + surname + "," + athleteNumber + "," + birthDate;
+        return "Athlete:" + name + "," + surname + "," + athleteNumber + "," + birthDate + "," + sportsDiscipline;
     }
 
 }
